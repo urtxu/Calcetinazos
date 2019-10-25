@@ -53,7 +53,7 @@ namespace proyectoche
 
                 SqlParameter p_poblacion = new SqlParameter("@poblacion ", SqlDbType.VarChar);
                 p_poblacion.Direction = ParameterDirection.Input;
-                p_poblacion.Value = txt_poblacion.Text;
+                p_poblacion.Value = txt_poblacion.Text; 
                 cmd.Parameters.Add(p_poblacion);
 
                 SqlParameter p_municipio = new SqlParameter("@municipio ", SqlDbType.VarChar);
