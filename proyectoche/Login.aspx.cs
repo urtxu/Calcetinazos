@@ -26,8 +26,7 @@ namespace Login_Proyecto
             using (SqlConnection con = new SqlConnection("Data Source=segundo150;Initial Catalog=DAM_GorkaUrtxuegia_DEV;Integrated Security=True"))
             {
 
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
+                SqlCommand cmd = new SqlCommand(); 
                 cmd.CommandText = "pr_loginCliente";
                 cmd.CommandType = CommandType.StoredProcedure;
 
