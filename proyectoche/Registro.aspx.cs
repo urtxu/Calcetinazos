@@ -23,6 +23,7 @@ namespace proyectoche
             {
 
                 SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
                 cmd.CommandText = "pr_altaCliente";
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -64,13 +65,13 @@ namespace proyectoche
                 SqlParameter p_cp = new SqlParameter("@cp ", SqlDbType.Char);
                 p_cp.Direction = ParameterDirection.Input;
                 p_cp.Value = txt_CP.Text;
-                cmd.Parameters.Add(p_municipio);
+                cmd.Parameters.Add(p_cp);
 
                 SqlParameter p_telefono = new SqlParameter("@tlf ", SqlDbType.Char);
                 p_telefono.Direction = ParameterDirection.Input;
                 p_telefono.Value = txt_telefono.Text;
-                cmd.Parameters.Add(p_municipio);
-
+                cmd.Parameters.Add(p_telefono);
+                
                 try
                 {
                     con.Open();

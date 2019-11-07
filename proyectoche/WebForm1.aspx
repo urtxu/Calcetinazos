@@ -1,6 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
   <head>
+      <title>Pagina principal</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
@@ -15,30 +16,36 @@
                 <a class="nav-link" href="WebForm1.aspx">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#venta">Calcetines</a>
+                <a class="nav-link" href="Calcetines">Calcetines</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#login">login</a>
+                <a class="nav-link" href="Login.aspx">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="Registro.aspx">Registrate</a>
             </li>
-        </ul>   
+        </ul> 
+       </div>
+    <div class="container navbar-expand-xl col-sm-3">
+       <form class=" form-inline mr-xl-12 my-xl-12">
+       <input class="form-control mr-xl-12" type="search" placeholder="Buscar" aria-label="Search" />
+       <button class="btn btn-outline-success my-xl-12" type="submit">Buscar</button>
+       </form>
+   </div>
  </nav>
-      <div class="container">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+<div id="carouselExampleControls" class="carousel slide bg-dark" data-ride="carousel"  >
               <div class="carousel-inner">
                 <div class="carousel-item active">
-              <img src="fotazas/calcetines1.jpg" class="d-block w-100" height="750px">
+              <img src="calcetinazos/cal1.jpg" class="d-block w-100" height="400px">
              </div>
                 <div class="carousel-item">
-                  <img src="fotazas/calcetines2.jpg" class="d-block w-100" height="750px">
+                  <img src="calcetinazos/cal2.jpg" class="d-block w-100" height="400px">
                 </div>
                 <div class="carousel-item">
-                  <img src="fotazas/calcetines3.jpg" class="d-block w-100" height="750px">
+                  <img src="calcetinazos/cal3.jpg" class="d-block w-100" height="400px">
                 </div> 
                  <div class="carousel-item">
-                  <img src="fotazas/calcetines4.jpg" class="d-block w-100" height="750px">
+                  <img src="calcetinazos/cal4.jpg" class="d-block w-100" height="400px">
                 </div>
             </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -50,8 +57,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>
-
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
